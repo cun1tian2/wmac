@@ -1,8 +1,15 @@
-installed tk2hbr2-43, xrehbr112    (tk2hbr112NG)
-wmac2.cgi ﾌｫﾙﾀﾞ cb/wmc (src multi Files, dst		(●don't usewmac.cgi
+installed tk2hbr243, xrehbr112    (tk2hbr112NG)
+wmac2.cgi ﾌｫﾙﾀﾞ cb/wmc (src multi Files, dst		(●● don't use wmac.cgi)
 wmc.cgi   ﾌｫﾙﾀﾞ cb/wmc (src multi folders, dst
-dbg olpsコメントタグ生成時nullが入るとDS-10やdssPlayerでolpsコメントが表示されない
-    変換結果のファイル名sjis要utf8化 <head><meta http-equiv=Content-Type content=text/html;charset=UTF-8></head>
-    wmc.cgiと合体
-lib 依存 use Unicode::Japanese;   cb/Unicode/Japanese.pm
-    (注)FTP ﾃﾞｨｽｸｸｵｰﾀecceededでupld不可、要大容量サイト使用 xreｸｵｰﾀ1Gb(s600以前は50MB)。
+depend on lib cb/Unicode/Japanese.pm、olmpsテンプレートファイル./twma(ｺｰﾃﾞｨﾝｸﾞは../twma)
+
+dbgPlan：
+olpsコメントタグ生成時nullが入るとDS-10やdssPlayerでolpsコメントが表示されない
+変換結果のファイル名sjis要utf8化 <head><meta http-equiv=Content-Type content=text/html;charset=UTF-8></head>
+wmc.cgiと合体
+
+コード解析：olmpsテンプレートファイルのｺｰﾃﾞｨﾝｸﾞは、ｶﾚﾝﾄﾜｰｷﾝdirが./wmcの為 "../twma"
+            エラー処理 olmps_idヘッダ "O.L.M.P."が無い場合(olps-F) no cnvtスキップ、
+            no chk-idkeyで中断 ???
+            
+(注)FTP ﾃﾞｨｽｸｸｵｰﾀecceededでupld不可、要大容量サイト使用 xreｸｵｰﾀ1Gb(s600以前は50MB)。
