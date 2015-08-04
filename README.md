@@ -5,8 +5,8 @@ depend on lib cb/Unicode/Japanese.pm、olmpsテンプレートファイル./twma
 
 dbgPlan：
 olpsコメントタグ生成時nullが入るとDS-10やdssPlayerでolpsコメントが表示されない
-変換結果のファイル名sjis要utf8化 <head><meta http-equiv=Content-Type content=text/html;charset=UTF-8></head>
-wmc.cgiと合体
+wmc.cgi 合体化と操作法簡素化
+変換結果のファイル名sjis要utf8化 <head><meta http-equiv=Content-Type content=text/html;charset=UTF-8></head> 当面の措置 IE11>表示>エンコード> でコードutf8化に加えて更新も実行される。
 
 コード解析：olmpsテンプレートファイルのｺｰﾃﾞｨﾝｸﾞは、ｶﾚﾝﾄﾜｰｷﾝdirが./wmcの為 "../twma"
             エラー処理 olmps_idヘッダ "O.L.M.P."が無い場合(olps-F) no cnvtスキップ、
