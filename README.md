@@ -3,7 +3,10 @@ wmac2.cgi ﾌｫﾙﾀﾞ cb/wmc (src multi Files, dst		(●● don't use wmac.c
 wmc.cgi   ﾌｫﾙﾀﾞ cb/wmc (src multi folders, dst
 depend on lib cb/Unicode/Japanese.pm、olmpsテンプレートファイル./twma(ｺｰﾃﾞｨﾝｸﾞは../twma)
 
-aaaaaaaaaaaaaaaaaaa
+wmac変換操作法：wmac変換後、wmaﾀｸﾞ再編集とolympusｺﾒﾝﾄ再編集が必須(*1)●。 (改150908)
+                (補足) wav生成、wav-wma変換、CDﾘｯﾋﾟﾝｸﾞ直接wma変換等の問題は特に無し。
+  (*1)wmac詳細：wmaﾀｸﾞ(title artist comment)維持、(albun trackNo 年号)消去、ジャンル0化あり。
+        olympusｺﾒﾝﾄ生成は複数のwmaﾀｸﾞの内最初の1個(通常title)のみ、wmaﾀｸﾞ無ければolpsｺﾒﾝﾄ生成も無し。
 
 dbgPlan：
 olpsコメントタグ生成時nullが入るとDS-10やdssPlayerでolpsコメントが表示されない
