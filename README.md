@@ -9,7 +9,7 @@ wmac変換操作法：wmac変換後、wmaﾀｸﾞ再編集とolympusｺﾒﾝ�
         olympusｺﾒﾝﾄ生成は複数のwmaﾀｸﾞの内最初の1個(通常title)のみ、wmaﾀｸﾞ無ければolpsｺﾒﾝﾄ生成も無し。
         
 wmac Olympusファイルヘッダ変換仕様：
--> evernote
+3行以上のコピペでIEエラー-> evernoteに残置
 
 dbgPlan：
 olpsコメントタグ生成時nullが入るとDS-10やdssPlayerでolpsコメントが表示されない
