@@ -3,6 +3,8 @@ wmac2.cgi ﾌｫﾙﾀﾞ cb/wmc (src multi Files, dst		(●● don't use wmac.c
 wmc.cgi   ﾌｫﾙﾀﾞ cb/wmc (src multi folders, dst
 depend on lib cb/Unicode/Japanese.pm、olmpsテンプレートファイル./twma(ｺｰﾃﾞｨﾝｸﾞは../twma)
 
+aaaaaaaaaaaaaaaaaaa
+
 dbgPlan：
 olpsコメントタグ生成時nullが入るとDS-10やdssPlayerでolpsコメントが表示されない
 wmc.cgi 合体化と操作法簡素化
