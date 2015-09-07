@@ -7,6 +7,8 @@ wmac変換操作法：wmac変換後、wmaﾀｸﾞ再編集とolympusｺﾒﾝ�
                 (補足) wav生成、wav-wma変換、CDﾘｯﾋﾟﾝｸﾞ直接wma変換等の問題は特に無し。
   (*1)wmac詳細：wmaﾀｸﾞ(title artist comment)維持、(albun trackNo 年号)消去、ジャンル0化あり。
         olympusｺﾒﾝﾄ生成は複数のwmaﾀｸﾞの内最初の1個(通常title)のみ、wmaﾀｸﾞ無ければolpsｺﾒﾝﾄ生成も無し。
+        
+aaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 dbgPlan：
 olpsコメントタグ生成時nullが入るとDS-10やdssPlayerでolpsコメントが表示されない
