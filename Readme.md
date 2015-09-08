@@ -8,6 +8,8 @@ wmac変換操作法(改150908)：
                 olympusｺﾒﾝﾄ生成は複数のwmaﾀｸﾞの内最初の1個(通常title)のみ、wmaﾀｸﾞ無ければolpsｺﾒﾝﾄ生成も無し。
 
   (* )wmac Olympusファイルヘッダ変換仕様-詳細：
+     wmaﾀｸﾞ(title artist comment)維持、(albun trackNo 年号)消去、ジャンル0化あり。
+     olympusｺﾒﾝﾄ生成は複数のwmaﾀｸﾞの内最初の1個(通常title)のみ、wmaﾀｸﾞ無ければolpsｺﾒﾝﾄ生成も無し。
 
 
 
