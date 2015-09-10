@@ -13,7 +13,7 @@ Lilith変換 ：wav->wma、CDﾘｯﾋﾟﾝｸﾞ->wma、ﾀｸﾞ編集(wma変
 STEpﾀｸﾞ編集：STEpとLilith操作順問わず可能。
 Trk番号の扱：TrackNumber/曲順 LilithとSTEpの扱いは異なり不可解->無視又は消去とする
 wmac変換   ：ｿｰｽﾌｧｲﾙ条件 WMA9 CBR 32k mono、。
-           ：●ｱﾙﾊﾞﾑ ﾀｸﾞは消去。(簡易ﾃﾝﾌﾟﾚｰﾄ 使用の為(*1))、事後ｱﾙﾊﾞﾑ ﾀｸﾞ要追加。
+           ：●ｱﾙﾊﾞﾑ ﾀｸﾞ(含むAlbumTitle Year Genrue GenreID Track等)は消去。(簡易ﾃﾝﾌﾟﾚｰﾄ 使用の為(*1))、事後必要ﾀｸﾞ要追加。
            ：DSSPlayerｺﾒﾝﾄは ﾀｲﾄﾙ 参加ｱｰﾃｨｽﾄ ｺﾒﾝﾄ をIFS="nul"で連結生成(*2)。
            ：wmac変換後ﾀｸﾞ編集可(Lilithﾘｻﾝﾌﾟﾘﾝｸﾞ無しﾀｸﾞ編集を除く)。 
            ：●ﾀｲﾄﾙ 参加ｱｰﾃｨｽﾄ ｺﾒﾝﾄを含む(3&.ﾁｬﾝｸ) 不存在時->"3&.ﾁｬﾝｸnotFound ｴﾗｰ"。
@@ -41,16 +41,15 @@ DSSPlayer  ：(*2)DSSPlayerｺﾒﾝﾄ表示は最初の項目(通常ﾀｲﾄ�
    更新確認法は winFileﾌﾟﾛﾊﾟﾃｨ/STEp/Lilith 何れでも可。
 ・sansa e-130表示窓  ﾀｸﾞ表示㊤artist  ㊥title ㊦album、[○]釦押し時の圧縮ｺｰﾄﾞ表示例"wma, 32kbps, 44khz"。
 
-・0&.u.f(ascii)ﾁｬﾝｸID x-3026 b275 8e66 cf11 a6d9 00aa .. 内のWM/AlbumTitle(utf16)に ｱﾙﾊﾞﾑ(utf16) 有り。
-・3&.u.f(ascii)ﾁｬﾝｸID x-3326 b275 8e66 cf11 a6d9 00aa .. 内に ﾀｲﾄﾙ 参加ｱｰﾃｨｽﾄ ｺﾒﾝﾄ(utf16) 有り。
+・0&.u.f(ascii)ﾁｬﾝｸID x-3026 b275 8e66 cf11 a6d9 00aa .. 内に(utf16)WM/AlbumTitle Year Genrue GenreID Track等有り。
+・3&.u.f(ascii)ﾁｬﾝｸID x-3326 b275 8e66 cf11 a6d9 00aa .. 内に(utf16) ﾀｲﾄﾙ 参加ｱｰﾃｨｽﾄ ｺﾒﾝﾄ等有り。
 
 ●● 要debug Plan
-(1) DSSPlayerｺﾒﾝﾄ"nul"->"sp"化 
-(2) ｱﾙﾊﾞﾑﾀｸﾞ復元 0&ﾁｬﾝｸ内WM/AlbumTitle部にﾊﾞｲﾄ数とあるばむ名が入ってる
-(3) 0&ﾁｬﾝｸ8kB超
-(4) 3&ﾁｬﾝｸ不存在時でも無視実行
+(1) DSSPlayerｺﾒﾝﾄ部の連結用IFSとなってる"nul"->"sp"化 
+(2) 0&ﾁﾍｯﾀﾞﾁｬﾝｸ内のｱﾙﾊﾞﾑその他ﾀｸﾞの復元 0&ﾁｬﾝｸ内WM/AlbumTitle部にﾊﾞｲﾄ数とあるばむ名が入ってる
+(3) 0&ﾁｬﾝｸ8kB超 ｿｰｽFileﾍｯﾀﾞｻｲｽﾞ9kbの物がある
+(4) 3&ﾁｬﾝｸ不存在時でもｴﾗｰとせず実行継続、ﾀｲﾄﾙ 参加ｱｰﾃｨｽﾄ ｺﾒﾝﾄの3ﾀｸﾞ全部含まない場合がある。
 (5) wmc.cgi 合体化と操作法簡素化
 (6) 変換結果のファイル名sjis要utf8化 <head><meta http-equiv=Content-Type content=text/html;charset=UTF-8></head>
-(7) olmpsテンプレートファイルのｺｰﾃﾞｨﾝｸﾞは、ｶﾚﾝﾄﾜｰｷﾝdirが./wmcの為 "../twma"となっとる、
-   エラー処理は olmps_idヘッダ "O.L.M.P."が無い場合(olps-F) no cnvtスキップ、chk-idkeyで中断。
-
+(7) olmpsテンプレートファイルのｺｰﾃﾞｨﾝｸﾞは、ｶﾚﾝﾄﾜｰｷﾝｸﾞdirが./wmcの為 "../twma"となっとる、
+( ) 
