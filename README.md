@@ -5,6 +5,12 @@ wmac2.cgi ﾌｫﾙﾀﾞ cb/wmc (src multi Files, dst          (●● don't us
 wmc.cgi   ﾌｫﾙﾀﾞ cb/wmc (src multi folders, dst
 depend on lib cb/Unicode/Japanese.pm、olmpsテンプレートファイル./twma(ｺｰﾃﾞｨﾝｸﾞは../twma)
 ------------------------------------------------------------------------------------------
+wmac変換操作法(要再改150917)：
+lilith：CDﾘｯﾋﾟﾝｸﾞwma9変換(ﾘｻﾝﾌﾟﾙ mono CBR 32k)、同時ﾀｸﾞ付加(title artist wmComment)、(wmac変換時3&ﾁｬﾝｸ用ﾀｸﾞ1個以上必須)
+wmac：  olympus変換
+step：  ﾀｸﾞ修正 Album追加、TrackとGenre消去(wmacで変換せずﾃﾞﾌｫﾙﾄ値or空白とする為)
+
+------------------------------------------------------------------------------------------
 wmac変換操作法(改150910)：
 
 Lilith変換 ：wav->wma、CDﾘｯﾋﾟﾝｸﾞ->wma、ﾀｸﾞ編集(wma変換と同時、ﾘｻﾝﾌﾟﾘﾝｸﾞ無しﾀｸﾞ編集のみの単独変換) 何れも可。
