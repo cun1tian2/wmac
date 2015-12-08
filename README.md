@@ -6,6 +6,7 @@ wmc.cgi   ﾌｫﾙﾀﾞ cb/wmc (src multi folders, dst
 depend on lib cb/Unicode/Japanese.pm、olmpsテンプレートファイル./twma(ｺｰﾃﾞｨﾝｸﾞは../twma)
 ------------------------------------------------------------------------------------------
 wmac変換操作法(要再改150917)：
+wmp12のCDﾘｯﾋﾟﾝｸﾞwavﾌｧｲﾙはlilihtやhStepでope不可、lilithﾘｯﾋﾟﾝｸﾞ時直接wma変換ﾀｸﾞ(除くalbm等)付け同時施工要。(*1)
 lilith：CDﾘｯﾋﾟﾝｸﾞwma9変換(ﾘｻﾝﾌﾟﾙ mono CBR 32k)、同時ﾀｸﾞ付加(title artist wmComment)、(wmac変換時3&ﾁｬﾝｸ用ﾀｸﾞ1個以上必須)
 wmac：  olympusﾀｸﾞ変換
 step：  ﾀｸﾞ修正 Album追加、TrackとGenre消去(wmacで変換せずﾃﾞﾌｫﾙﾄ値or空白とする為)
@@ -52,6 +53,11 @@ DSSPlayer  : 記録可能時間 HQﾓｰﾄﾞwmaで4H20M 大量保存不可
 
 ・0&.u.f(ascii)ﾁｬﾝｸID x-3026 b275 8e66 cf11 a6d9 00aa .. 内に(utf16)WM/AlbumTitle Year Genrue GenreID Track等有り。
 ・3&.u.f(ascii)ﾁｬﾝｸID x-3326 b275 8e66 cf11 a6d9 00aa .. 内に(utf16) ﾀｲﾄﾙ 参加ｱｰﾃｨｽﾄ ｺﾒﾝﾄ等有り。
+
+(*1) 151129-151209バグフィックス＆関係記事メモ   Lilith CDﾘｯﾋﾟﾝｸﾞ直接wma変換→sansaでｱﾙﾊﾞﾑﾀｸ不表示の問題
+①olps用wmac変換時0&ﾍｯﾀﾞ部(WM/albumTitle:albm WM/YearYear:9999 WM/Track:-)はolpsﾃﾝﾌﾟﾚｰﾄに交換され無効となる。②wmp12でCDﾘｯﾋﾟﾝｸﾞしたwavﾌｧｲﾙはSTEpとLilithに追加openできない。その他trackNo.曲順ﾀｸﾞの挙動不審等不詳。
+よってLilithでCDﾘｯﾋﾟﾝｸﾞ時ﾀｸﾞ付け(ｱﾙﾊﾞﾑはwmac変換時無効)とwma(32kCBRﾘｻﾝﾌﾟﾘﾝｸﾞmono)変換し、olps用wmac変換とする。
+ﾍｯﾀﾞﾀｸﾞ情報確認操作法 ①winﾌﾟﾛﾊﾟﾃｨでは通常IDﾀｸﾞのみ表示、wmp12のﾌﾟﾚｲﾋﾞｭｰ/ﾗｲﾌﾞﾗﾘ●画面下部のﾌｧｲﾙ>ﾌﾟﾛﾊﾟﾃｨ>ﾌｧｲﾙﾀﾌﾞに(ﾋﾞｯﾄﾚｰﾄ71kbps,ｺｰﾃﾞｯｸwma9.2,48kbps,44kHz,stereo,2-pass,VBR)表示。
 
 ●● 要debug Plan
 (1) DSSPlayerｺﾒﾝﾄ部の連結用IFSとなってる"nul"->"sp"化 
