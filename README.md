@@ -6,7 +6,8 @@ wmc.cgi   ﾌｫﾙﾀﾞ cb/wmc (src multi folders, dst
 depend on lib cb/Unicode/Japanese.pm、olmpsテンプレートファイル./twma(ｺｰﾃﾞｨﾝｸﾞは../twma)
 ------------------------------------------------------------------------------------------
 wmac変換操作法(要再改150917)：
-wmp12のCDﾘｯﾋﾟﾝｸﾞwavﾌｧｲﾙはlilihtやhStepでope不可、lilithﾘｯﾋﾟﾝｸﾞ時直接wma変換ﾀｸﾞ(除くalbm等)付け同時施工要。(*1)
+wmp12のCDﾘｯﾋﾟﾝｸﾞwavﾌｧｲﾙはlilihtやhStepで開くopen不可、lilithﾘｯﾋﾟﾝｸﾞ時直接wma変換ﾀｸﾞ(除くalbm等)付け同時施工要。(*1)
+〃     のCDﾘｯﾌﾟwma変換はﾊﾟﾗﾒｰﾀ32kCBRmonoを指定できない。
 lilith：CDﾘｯﾋﾟﾝｸﾞwma9変換(ﾘｻﾝﾌﾟﾙ mono CBR 32k)、同時ﾀｸﾞ付加(title artist wmComment)、(wmac変換時3&ﾁｬﾝｸ用ﾀｸﾞ1個以上必須)
 wmac：  olympusﾀｸﾞ変換
 step：  ﾀｸﾞ修正 Album追加、TrackとGenre消去(wmacで変換せずﾃﾞﾌｫﾙﾄ値or空白とする為)
