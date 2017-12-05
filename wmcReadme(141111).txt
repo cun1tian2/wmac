@@ -6,7 +6,7 @@
 ②lilithファイル変換操作：WinMediaAudio V9.2 CBR 32K mono タグを無視
 ③cb/wma/にファイルupld、cb/wmac2.cgi実行(171204現在 tk243aym2 #061208版のみ実装 TOK)、
   (複数フォルダ一括変換時cb/wmcs/にファイルupld、cb/wmc.cgi実行、cb/wmcd/に変換結果ファイル生成 詳細cb/wmc.cgi要参照)
-
+④olpsDSSplayerでのｺﾒﾝﾄ編集で異体字は??となり使えない(F構造上はS-JIS扱いとなっとる)
   sansa e120 でalbumタグ表示(no album表示となる対策)
 ①albumに異体字が入るとno albumとなる、(できればTrkNo.全て消去(Winﾌﾟﾛﾊﾟﾃｨ,STEp,lilithの全てで))
 ②title,artistに異体字使用可、Winﾌﾟﾛﾊﾟﾃｨで操作する
