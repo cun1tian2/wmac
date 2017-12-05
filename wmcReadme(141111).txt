@@ -1,6 +1,6 @@
 -------------------
-171204 WMAタグ変換 総括まとめ (●要参照 github/wmac/wmcReadme他,evernote)
-  Olympus DS-10専用コメントを書けるようにする
+171204 WMAタグ変換 総括まとめ (●要参照 ma:evernote,sb:github/wmac/wmcReadme他)
+  Olympus DS-10専用コメントを書けるようにする
 ①orgnlファイルのタグ タイトル(タグは1個のみ必須)のみとし他(artist,album,trkNo,date,junre等)はできるだけ全て消去、
   Winﾌﾟﾛﾊﾟﾃｨ,STEP,Bz184等で確認
 ②lilithファイル変換操作：WinMediaAudio V9.2 CBR 32K mono タグを無視
