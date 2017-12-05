@@ -1,4 +1,18 @@
-----------------------
+-------------------
+171204 WMAタグ変換 総括まとめ (●要参照 github/wmac/wmcReadme他,evernote)
+  Olympus DS-10専用コメントを書けるようにする
+①orgnlファイルのタグ タイトル(タグは1個のみ必須)のみとし他(artist,album,trkNo,date,junre等)はできるだけ全て消去、
+  Winﾌﾟﾛﾊﾟﾃｨ,STEP,Bz184等で確認
+②lilithファイル変換操作：WinMediaAudio V9.2 CBR 32K mono タグを無視
+③cb/wma/にファイルupld、cb/wmac2.cgi実行(171204現在 tk243aym2 #061208版のみ実装 TOK)、
+  (複数フォルダ一括変換時cb/wmcs/にファイルupld、cb/wmc.cgi実行、cb/wmcd/に変換結果ファイル生成 詳細cb/wmc.cgi要参照)
+
+  sansa e120 でalbumタグ表示(no album表示となる対策)
+①albumに異体字が入るとno albumとなる、(できればTrkNo.全て消去(Winﾌﾟﾛﾊﾟﾃｨ,STEp,lilithの全てで))
+②title,artistに異体字使用可、Winﾌﾟﾛﾊﾟﾃｨで操作する
+③STEpで異体字操作してもタグ更新で□?に文字化け、ファイル名も同様。必要部分のみWinﾌﾟﾛﾊﾟﾃｨで修正操作、
+④STEpでTrkNo.等操作しタグ更新するとファイルヘッダが大きくなってしまう??
+---------------------- 
 141111 標準wmaファイルを Olympus Voice Trek DS-10用フォーマット変換仕様 操作法
 
 ・wavからwma変換：Project9k_lilith0.991b リサンプリング(int16,mono-ch,44.1k,quality3)、WinMediaAudioV9.1(CBR,32Kbbs)
